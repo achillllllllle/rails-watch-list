@@ -15,11 +15,12 @@
 
 <div class="container d-flex m-3">
   <div class="mx-2">
-    <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+    <%= cl_image_tag @list.photo.key, height: 550, width: 400, crop: :fill %>
   </div>
   <div>
     <% @bookmarks.each do |bookmark| %>
       <div class="notification opacity-75" >
+        <img src=<%= bookmark.movie.poster_url %> class="avatar-squared" />
         <div class="notification-content">
           <p><small><%= bookmark.movie.title %></small></p>
           <p><%= bookmark.comment %></p>
