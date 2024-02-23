@@ -17,3 +17,6 @@ puts "Creating movies"
   puts "#{movie.title} created!"
 end
 puts "Creation finished"
+
+
+puts "Creating images"
