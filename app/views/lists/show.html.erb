@@ -7,4 +7,5 @@
     <%= link_to "Delete", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
   </div>
 <% end %>
+
 <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
